@@ -10,7 +10,8 @@ module.exports = [
       'eslint.config.js',
       '.eslintrc.js',
       'node_modules/**',
-      'dist/**'
+      'dist/**',
+      'playwright.config.js'
     ]
   },
   js.configs.recommended,
@@ -75,11 +76,12 @@ module.exports = [
     }
   },
   {
-    files: ['**/*.setup.js', '**/*.config.js', 'e2e-tests/*.spec.js'],
+    files: ['**/*.setup.js', 'e2e-tests/*.spec.js'],
     languageOptions: {
       globals: {
         ...globals.node,
-      }
+      },
+      sourceType: 'commonjs',
     }
-  }
+  },
 ]
