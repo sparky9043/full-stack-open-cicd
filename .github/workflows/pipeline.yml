@@ -20,4 +20,4 @@ jobs:
       - name: Run npm test
         run: npm test
       - name: Run Playwright tests
-        run: npm run test:e2e
+        run: npm install playwright@latest e2e-tests && npm run test:e2e
