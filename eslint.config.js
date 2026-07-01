@@ -75,7 +75,7 @@ module.exports = [
     }
   },
   {
-    files: ['**/*.setup.js', 'e2e-tests/*.config.js', 'e2e-tests/tests/*.spec.js'],
+    files: ['**/*.setup.js', '**/*.config.js', 'e2e-tests/*.spec.js'],
     languageOptions: {
       globals: {
         ...globals.node,
