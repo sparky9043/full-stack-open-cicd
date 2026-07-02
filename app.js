@@ -11,4 +11,8 @@ const start = async () => {
   console.log(`server started on port ${PORT}`)
 }
 
+app.get('/health', (req, res) => {
+  res.send('ok')
+})
+
 start()
