@@ -75,11 +75,19 @@ module.exports = [
     }
   },
   {
-    files: ['**/*.setup.js',],
+    files: ['**/*.setup.js'],
     languageOptions: {
       sourceType: 'commonjs',
       globals: { ...globals.node },
       ecmaVersion: 'latest',
     },
+  },
+  {
+    files: ['**/playwright.config.js'],
+    languageOptions: {
+      sourceType: 'module',
+      globals: { ...globals.node },
+      ecmaVersion: 'latest',
+    }
   }
 ]
