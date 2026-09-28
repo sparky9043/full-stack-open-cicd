@@ -83,7 +83,7 @@ module.exports = [
     },
   },
   {
-    files: ['**/playwright.config.js'],
+    files: ['**/playwright.config.js', '**/e2e-tests/*.spec.js'],
     languageOptions: {
       sourceType: 'module',
       globals: { ...globals.node },
