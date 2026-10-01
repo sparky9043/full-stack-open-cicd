@@ -49,6 +49,7 @@ footer {
   height: 150px;
   width: 150px;
   position: relative;
+  box-shadow: 0 1px 5px grey;
 }
 
 .list-item-name {
